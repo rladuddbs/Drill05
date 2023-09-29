@@ -44,7 +44,7 @@ while running:
     hand_arrow.draw_now(cursor_x, cursor_y)
 
     update_canvas()
-    frame = (frame + 100) % 8
+    frame = (frame + 1) % 8
     time_count += 1
     if(x > cursor_x - 50 and x < cursor_x + 50 and y > cursor_y - 50 and y < cursor_y + 50):
         cursor_x = random.randint(100, 1100)
